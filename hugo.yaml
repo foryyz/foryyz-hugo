@@ -143,10 +143,17 @@ menu:
       name: /ChatGPT🐧
       url: https://chat.foryyz.top
       weight: 30
+    - identifier: Draw
+      name: /Draw🖌
+      url: https://draw.foryyz.top
+    - identifier: Cloud
+      name: /Cloud☁
+      url: https://cloud.foryyz.top
+      weight: 40
     - identifier: AboutMe
       name: /About-yyz/
       url: /aboutme/
-      weight: 40
+      weight: 60
     # - identifier: categories
     #   name: categories
     #   url: /categories/
