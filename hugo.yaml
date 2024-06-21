@@ -151,6 +151,10 @@ menu:
       name: /Draw🖌
       url: https://draw.foryyz.top
       weight: 50
+    - identifier: Agent
+      name: /Agent👾
+      url: https://agent.foryyz.top
+      weight: 60
     # - identifier: AboutMe
     #   name: /About-yyz/
     #   url: /aboutme/
