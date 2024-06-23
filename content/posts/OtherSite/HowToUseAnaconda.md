@@ -133,7 +133,11 @@ conda clean -p
 conda clean -t
 #删除所有的安装包及cache
 conda clean -y --all
+```
 
+### 配置conda国内源
+
+```bash
 #配置国内源 - 方法一
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
@@ -154,14 +158,17 @@ auto_activate_base: false  #关闭自动激活状态
 #其他相关
 conda config --remove-key channels   换回conda默认源，在出现一些故障时可以使用
 conda config --show-sources   找到.condac文件并查看里面的镜像源
-
 ```
 
 
 
-# 4 配置pip全局镜像源
+# x 其他说明
+
+## x1 如何配置pip全局镜像源
 
 ```bash
 #清华源
+python -m pip install --upgrade pip#更新pip
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
+
