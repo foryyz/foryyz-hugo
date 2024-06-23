@@ -60,6 +60,10 @@ Spark官方文档 - [Word2Vec — PySpark master documentation (apache.org)](htt
   - word: 要查找相似词的单词
   - num: 返回的相似词数量
 
+### 随机游走的Graph Embedding算法
+
+---未完
+
 ## 3 大模型的交接
 
 使用**StructedStreaming**组件监听**数据清洗后的文件夹**，收到文件后对json文件进行读取并执行词向量化操作，将词向量**传输给Embedding模型**后创建**向量数据库**。
