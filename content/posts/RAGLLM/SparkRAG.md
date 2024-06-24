@@ -62,8 +62,18 @@ Spark官方文档 - [Word2Vec — PySpark master documentation (apache.org)](htt
 
 ### 随机游走的Graph Embedding算法
 
----未完
+### 分布式训练 - TensorFlowOnSpark
 
-## 3 大模型的交接
+## 3 大模型交互 - 结果生成
 
 使用**StructedStreaming**组件监听**数据清洗后的文件夹**，收到文件后对json文件进行读取并执行词向量化操作，将词向量**传输给Embedding模型**后创建**向量数据库**。
+
+## 4 TensorBoard - 可视化
+
+使用**SparkMLlib**的**.fit()**方法生成模型后，通过命令行 `%tensorboard --logdir logs/fit`开启面板
+
+通过三维面板，可以清晰看出**词向量化的效果优劣**
+
+如果过于密集，则调整聚类算法；如果过于稀疏，则尝试减小分词大小等方法
+
+如果两词间联系不符合逻辑，则需要调整模型算法
