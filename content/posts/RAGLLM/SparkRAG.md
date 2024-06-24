@@ -70,6 +70,8 @@ Spark官方文档 - [Word2Vec — PySpark master documentation (apache.org)](htt
 
 ## 4 TensorBoard - 可视化
 
+[Embedding projector - visualization of high-dimensional data (tensorflow.org)](https://projector.tensorflow.org/)
+
 使用**SparkMLlib**的**.fit()**方法生成模型后，通过命令行 `%tensorboard --logdir logs/fit`开启面板
 
 通过三维面板，可以清晰看出**词向量化的效果优劣**
@@ -77,3 +79,5 @@ Spark官方文档 - [Word2Vec — PySpark master documentation (apache.org)](htt
 如果过于密集，则调整聚类算法；如果过于稀疏，则尝试减小分词大小等方法
 
 如果两词间联系不符合逻辑，则需要调整模型算法
+
+![](view1.png)
