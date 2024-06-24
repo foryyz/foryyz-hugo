@@ -81,3 +81,7 @@ Spark官方文档 - [Word2Vec — PySpark master documentation (apache.org)](htt
 如果两词间联系不符合逻辑，则需要调整模型算法
 
 ![](view1.png)
+
+如下图,显示关于**who**单词的有关预测概率 ↓
+
+![](view3.png)
