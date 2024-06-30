@@ -132,7 +132,7 @@ pip install sentencepiece
 pip install pyqt6 pyqt6-tools
 ```
 
-## 5 安装其他库包
+## 5 安装依赖包
 
 ```bash
 sudo apt-get install libxkbcommon0 libegl1 libxcb-icccm4 libxkbcommon-x11-0 libxcb-image0 libxcb-keysyms1 libxcb-render-util0
@@ -140,9 +140,12 @@ sudo apt-get install libxkbcommon0 libegl1 libxcb-icccm4 libxkbcommon-x11-0 libx
 #如果还是不能执行程序 请添加环境变量 export QT_DEBUG_PLUGINS=1 开启报错日志
 ```
 
-## 6 执行程序
+## 6 拉取并执行程序
 
-```
+```bash
+git pull https://github.com/foryyz/Hello-My-AI.git
+cd Hello-My-AI
+
 python run_GUI.py
 ```
 
