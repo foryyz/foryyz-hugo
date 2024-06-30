@@ -1,13 +1,13 @@
 ---
-title: 'HowToBeginningRagllm'
+title: 'MyAI'
 date: 2024-06-22T22:41:20+08:00
 draft: false
 ---
 > 项目启动时间：2024/06/02
 >
-> 最后更新时间：2024/06/11
+> 最后更新时间：2024/06/30
 >
-> 当前版本：V0.110
+> 当前版本：V0.111
 
 # Hello My AI
 
@@ -42,6 +42,12 @@ MainWindow窗口样式改动,按钮自动垂直排序
 实现多向量数据库的分层设计，存储和读取测试成功.
 添加utils.py文件，需要初始化的实例对象写入该文件中.
 ===下一步开发说明：编写 自动化添加[知识库登入按钮]，实现 [多补充文档数据的管理], 优化[ModelOne.py]代码结构.
+
+V0.111 - 2024-06-30 - [yyz]
+重构utils.py文件架构，改为面向对象编程结构
+更改结构调用昵称(调用方式未改动)
+- 尝试使用Spark集群训练Embedding模型，效果一般
+- 目前改用Ollama的mxbai-embed-large模型
 ```
 
 
@@ -79,17 +85,15 @@ MainWindow窗口样式改动,按钮自动垂直排序
 
 ## 1.3 变量说明 - utils.py
 
-> 2024-06-11
+> 2024-06-30
 
-- data_id - 知识库id
-- data_path - 知识库 补充文档 路径
-- chroma_path - 向量数据库 子路径
-- data_prompt - 数据库提示词
-- embeddings - 检索模型
+- aigcs - 知识库实例列表
 
 
 
 # x1 如何开始？
+
+**操作系统**：**Ubuntu24.04** - WSL
 
 ## 0 安装Anaconda、Ollama
 
@@ -135,3 +139,10 @@ sudo apt-get install libxkbcommon0 libegl1 libxcb-icccm4 libxkbcommon-x11-0 libx
 
 #如果还是不能执行程序 请添加环境变量 export QT_DEBUG_PLUGINS=1 开启报错日志
 ```
+
+## 6 执行程序
+
+```
+python run_GUI.py
+```
+
